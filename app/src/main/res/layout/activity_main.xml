@@ -14,13 +14,14 @@
         android:background="#F5F5F5"
         android:paddingTop="15dp"
         android:textAlignment="center"
-        android:textSize="40dp" />
+        android:textSize="30dp" />
 
     <TextView
         android:id="@+id/link"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Cod3F1re"
+        android:text="@string/git"
+
         android:textAlignment="center"/>
 
     <LinearLayout

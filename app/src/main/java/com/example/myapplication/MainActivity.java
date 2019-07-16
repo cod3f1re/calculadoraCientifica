@@ -6,6 +6,7 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.DialogInterface;
 import android.os.Bundle;
+import android.text.method.LinkMovementMethod;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -31,6 +32,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        TextView t2 = (TextView) findViewById(R.id.link);
+        t2.setMovementMethod(LinkMovementMethod.getInstance());
         // Referenciar los botones numericos e implementacion del setOnClickListener
         Button n0 = (Button) findViewById(R.id.btn0);
         n0.setOnClickListener(this);
@@ -123,7 +126,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 case R.id.btnpregunta:
                     break;
                 case R.id.btn0:
-                    pantalla.setText(a +"0");
+                    pantalla.setText(a+"0");
                     break;
                 case R.id.btn1:
                     pantalla.setText(a+"1");
@@ -132,25 +135,25 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     pantalla.setText(a+"2");
                     break;
                 case R.id.btn3:
-                    pantalla.setText(a+" 3");
+                    pantalla.setText(a+"3");
                     break;
                 case R.id.btn4:
-                    pantalla.setText(a+" 4");
+                    pantalla.setText(a+"4");
                     break;
                 case R.id.btn5:
-                    pantalla.setText(a+" 5");
+                    pantalla.setText(a+"5");
                     break;
                 case R.id.btn6:
-                    pantalla.setText(a+" 6");
+                    pantalla.setText(a+"6");
                     break;
                 case R.id.btn7:
-                    pantalla.setText(a+" 7");
+                    pantalla.setText(a+"7");
                     break;
                 case R.id.btn8:
-                    pantalla.setText(a+" 8");
+                    pantalla.setText(a+"8");
                     break;
                 case R.id.btn9:
-                    pantalla.setText(a+" 9");
+                    pantalla.setText(a+"9");
                     break;
                 case R.id.btnblanco:
                     log = true;
