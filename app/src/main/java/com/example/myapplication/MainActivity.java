@@ -164,7 +164,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     decimal=false;
                     break;
                 case R.id.btnBorrar:
-                    pantalla.setText("");
+                    pantalla.setText(a);
                     decimal = false;
                     break;
                 case R.id.btncoseno:
@@ -198,7 +198,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     if(suma == true) {
                         resultado = numero[0]+ numero[1];
                         pantalla.setText(String.valueOf( resultado));
-
                     }   else if (resta == true){
                         resultado = numero[0]- numero[1];
                         pantalla.setText(String.valueOf( resultado));
@@ -207,6 +206,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         pantalla.setText(String.valueOf( resultado));
                     }   else if (divide == true){
                         resultado = numero[0]/ numero[1];
+                        pantalla.setText(String.valueOf( resultado));
+                    }   else if (porc == true){
+                        resultado=(numero[0]*100)/numero[1];
                         pantalla.setText(String.valueOf( resultado));
                     }
                     decimal = false;
@@ -264,8 +266,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     porc=true;
                     numero[0]=Double.parseDouble(a);
                     pantalla.setText("");
-                    resultado=numero[0]*100/numero[1];
-                    pantalla.setText(String.valueOf( resultado));
                     decimal = false;
                     break;
                 case R.id.btnsumar:
