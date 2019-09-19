@@ -1,28 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Creado por Cod3F1re el 16/07/2019 -->
+<!-- Author: COD3F1RE -->
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingTop="16dp">
-
     <TextView
         android:id="@+id/texto"
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:background="#F5F5F5"
-        android:paddingTop="15dp"
+        android:paddingTop="29dp"
         android:textAlignment="center"
         android:textSize="30dp" />
-
-    <TextView
-        android:id="@+id/link"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/git"
-
-        android:textAlignment="center"/>
 
     <LinearLayout
         android:id="@+id/layout1"
@@ -43,7 +35,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="55dp"
                 android:orientation="vertical"
-                android:text="NO" />
+                android:text="" />
 
             <Button
                 android:id="@+id/btnseno"
@@ -93,15 +85,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-
             >
-
             <Button
-
+                android:id="@+id/btnRaizEnes"
                 android:layout_width="wrap_content"
                 android:layout_height="55dp"
                 android:orientation="vertical"
-                android:text="" />
+                android:text="√n" />
 
             <Button
                 android:id="@+id/btncoseno"
@@ -115,7 +105,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="55dp"
                 android:orientation="vertical"
-                android:text="v" />
+                android:text="√" />
 
             <Button
                 android:id="@+id/btn8"
@@ -153,10 +143,11 @@
             android:orientation="vertical">
 
             <Button
+                android:id="@+id/btnLog"
                 android:layout_width="wrap_content"
                 android:layout_height="55dp"
                 android:orientation="vertical"
-                android:text="" />
+                android:text="LOG" />
 
             <Button
                 android:id="@+id/btnTargente"
@@ -203,7 +194,6 @@
                 android:text="="
                 android:textColor="#ffffff"
                 android:textSize="70px" />
-
         </LinearLayout>
 
         <LinearLayout
@@ -219,11 +209,11 @@
                 android:text="%" />
 
             <Button
-                android:id="@+id/btnblanco"
+                android:id="@+id/btnIn"
                 android:layout_width="wrap_content"
                 android:layout_height="55dp"
                 android:orientation="vertical"
-                android:text="LOG" />
+                android:text="IN" />
 
             <Button
                 android:id="@+id/btnBorrar"
