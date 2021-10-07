@@ -193,7 +193,7 @@
                 android:orientation="vertical"
                 android:text="="
                 android:textColor="#ffffff"
-                android:textSize="70sp" />
+                android:textSize="30sp" />
         </LinearLayout>
 
         <LinearLayout
