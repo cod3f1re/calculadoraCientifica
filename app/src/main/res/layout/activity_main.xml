@@ -14,7 +14,7 @@
         android:background="#F5F5F5"
         android:paddingTop="29dp"
         android:textAlignment="center"
-        android:textSize="30dp" />
+        android:textSize="30sp" />
 
     <LinearLayout
         android:id="@+id/layout1"
@@ -193,7 +193,7 @@
                 android:orientation="vertical"
                 android:text="="
                 android:textColor="#ffffff"
-                android:textSize="70px" />
+                android:textSize="70sp" />
         </LinearLayout>
 
         <LinearLayout
